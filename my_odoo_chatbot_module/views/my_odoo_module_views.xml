@@ -1,3 +1,28 @@
+
+<odoo>
+    <template id="assets_backend" name="chatbot assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="/my_odoo_chatbot_module/static/src/css/chatbot.css"/>
+            <script type="text/javascript" src="/my_odoo_chatbot_module/static/src/js/chatbot.js"></script>
+        </xpath>
+    </template>
+
+    <template id="chatbot_navbar_button" inherit_id="web.WebClient">
+        <xpath expr="//div[@class='o_menu_systray']" position="inside">
+            <button type="button" class="o_chatbot_systray_btn fa fa-comments-o" title="Chatbot" style="background:none;border:none;font-size:20px;margin-left:8px;"></button>
+        </xpath>
+    </template>
+
+    <template id="chatbot_box_template">
+        <div id="chatbot-box" style="display:none;position:fixed;bottom:60px;right:30px;z-index:1051;width:320px;background:#fff;border:1px solid #ccc;box-shadow:0 2px 8px rgba(0,0,0,0.2);border-radius:8px;padding:12px;">
+            <div style="font-weight:bold;margin-bottom:8px;">Chatbot</div>
+            <div id="chat-response" style="min-height:50px;margin-bottom:8px;"></div>
+            <input id="chat-input" type="text" placeholder="Type your message..." style="width:70%;margin-right:4px;"/>
+            <button id="chat-send" style="width:24%;">Send</button>
+            <button id="chatbot-close" style="float:right;margin-top:8px;">Close</button>
+        </div>
+    </template>
+</odoo>
 <odoo>
     <data>
         <template id="assets_backend" name="Chatbot Assets" inherit_id="web.assets_backend">
