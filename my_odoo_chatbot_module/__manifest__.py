@@ -5,7 +5,9 @@
     "author": "Your Name",
     "category": "Tools",
     "depends": [],
-    "data": [],
+    "data": [
+        "views/my_odoo_module_views.xml",
+    ],
     "installable": True,
     "application": False,
     "auto_install": False
