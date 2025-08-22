@@ -1,19 +1,12 @@
 {
-    "name": "Odoo Chatbot Module",
-    "version": "1.0",
-    "summary": "A simple context-aware chatbot for Odoo",
+    "name": "My Odoo Chatbot Module",
+    "version": "1.0.0",
+    "summary": "Barebones Odoo 18 module",
+    "author": "Your Name",
     "category": "Tools",
-    "author": "Aaditya Singh",
-    "website": "http://www.example.com",
-    "depends": ["base", "web"],
-    "data": [
-        "security/ir.model.access.csv",
-        "views/my_odoo_module_views.xml"
-    ],
-    "qweb": [
-        "views/my_odoo_module_views.xml"
-    ],
+    "depends": [],
+    "data": [],
     "installable": True,
-    "application": True,
+    "application": False,
     "auto_install": False
 }
