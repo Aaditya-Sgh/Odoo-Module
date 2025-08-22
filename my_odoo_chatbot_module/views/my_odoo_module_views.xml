@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <template id="assets_backend" name="Chatbot Assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/my_odoo_chatbot_module/static/src/js/chatbot.js"/>
+                <link rel="stylesheet" href="/my_odoo_chatbot_module/static/src/css/chatbot.css"/>
+            </xpath>
+        </template>
+
+        <template id="chatbot_widget" name="Chatbot Widget">
+            <div id="chatbot-box">
+                <input type="text" id="chat-input" placeholder="Ask something..."/>
+                <button id="chat-send">Send</button>
+                <div id="chat-response"></div>
+            </div>
+        </template>
+    </data>
+</odoo>
