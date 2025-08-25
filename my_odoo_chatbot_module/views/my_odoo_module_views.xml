@@ -1,13 +1,13 @@
 <odoo>
   <data>
 
-    <!-- 1. Backend Assets -->
+    <!-- 1. Backend Assets 
     <template id="assets_backend" name="Chatbot Assets" inherit_id="web.assets_backend">
       <xpath expr="." position="inside">
         <script type="text/javascript" src="/my_odoo_chatbot_module/static/src/js/chatbot.js"/>
         <link rel="stylesheet" href="/my_odoo_chatbot_module/static/src/css/chatbot.css"/>
       </xpath>
-    </template>
+    </template> -->
 
     <!-- 2. Navbar Button -->
     <template id="chatbot_navbar_button" inherit_id="web.WebClient">
